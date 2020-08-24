@@ -1,0 +1,23 @@
+<div class="main-container" style="padding-top: 20px;">
+  <div class="search-container">
+    <mat-form-field appearance="fill">
+      <mat-label>Name or Doc#</mat-label>
+      <input matInput [(ngModel)]="searchField">
+      <mat-icon matPrefix>search</mat-icon>
+      <mat-icon id="btnSearch" style="cursor:pointer" matSuffix (click)="search()">arrow_forward</mat-icon>
+
+    </mat-form-field>
+    <mat-form-field class="input-destinatario">
+      <mat-label>{{placeholder_name}} </mat-label>
+      <input id="destinatario" [value]="currentFarmer?.name" matInput disabled>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Doc#</mat-label>
+      <input id="doc" matInput disabled [value]="currentFarmer?.document?.documentNumber">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Endereço </mat-label>
+      <input id="endereco" matInput disabled [value]="currentFarmer?.address?.address">
+    </mat-form-field>
+  </div>
+</div>
