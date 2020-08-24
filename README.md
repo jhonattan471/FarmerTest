@@ -4,11 +4,13 @@
 
 Run npm install for both projects
 
-## Development server
+## Development server Front
 
 Run FarmerTestFront/ `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-Run FarmerTestBack/ `node index.js`
 
+## Development server Back
+
+Run FarmerTestBack/ `node index.js`
 
 ## Running unit tests
 
